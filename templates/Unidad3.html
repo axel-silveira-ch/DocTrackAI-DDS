@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocTrackAI - Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Unidad3.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>DocTrackAI - Dashboard</h1>
+        <div class="card">
+            <div class="card-header">
+                <h2>Gestión de Pacientes</h2>
+            </div>
+            <div class="card-body">
+                <button id="btnObtenerPacientes">Obtener Pacientes</button>
+                <button id="btnAgregarPaciente">Agregar Paciente</button>
+                <button id="btnEditarPaciente">Editar Paciente</button>
+                <button id="btnBorrarPaciente">Borrar Paciente</button>
+                <div id="listaPacientes"></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h2>Gestión de Citas</h2>
+            </div>
+            <div class="card-body">
+                <button id="btnObtenerCitas">Obtener Citas</button>
+                <button id="btnAgregarCita">Agregar Cita</button>
+                <button id="btnEditarCita">Editar Cita</button>
+                <button id="btnBorrarCita">Borrar Cita</button>
+                <div id="listaCitas"></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h2>Diagnóstico</h2>
+            </div>
+            <div class="card-body">
+                <button id="btnPredecirDiagnostico">Predecir Diagnóstico</button>
+                <div id="resultadoDiagnostico"></div>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/Unidad3.js') }}"></script>
+</body>
+</html>
